@@ -16,5 +16,21 @@ namespace COMP123_S2019_A5_301051523
         {
             InitializeComponent();
         }
+
+        private void OpenFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void ButtonCancel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ButtonNext_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.formProductInfo.Show();
+        }
     }
 }

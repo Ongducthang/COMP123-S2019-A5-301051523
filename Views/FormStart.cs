@@ -16,5 +16,22 @@ namespace COMP123_S2019_A5_301051523.Views
         {
             InitializeComponent();
         }
+
+        private void ButtonToFormSelect_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.formSelect.Show();
+        }
+
+        private void ProductInfo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.formProductInfo.Show();
+        }
+
+        private void ButtonQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -10,23 +10,24 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_A5_301051523.Views
 {
-    public partial class FormSplash : Form
+    public partial class FormProductInfo : Form
     {
-        public FormSplash()
+        public FormProductInfo()
         {
             InitializeComponent();
         }
 
-        private void TimerSplash_Tick(object sender, EventArgs e)
+        private void ButtonSelectAnotherProduct_Click(object sender, EventArgs e)
         {
-            timerSplash.Enabled = false;
-            Program.formStart.Show();
             this.Hide();
+            Program.formSelect.Show();
         }
 
-        private void FormSplash_Load(object sender, EventArgs e)
+
+
+        private void ButtonCancel_Click(object sender, EventArgs e)
         {
-            timerSplash.Enabled = true;
+            Application.Exit();
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace COMP123_S2019_A5_301051523
+﻿namespace COMP123_S2019_A5_301051523.Views
 {
-    partial class FormSelect
+    partial class FormProductInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,57 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.buttonNext = new System.Windows.Forms.Button();
+            this.buttonSelectAnotherProduct = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // openFileDialog1
+            // buttonSelectAnotherProduct
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.OpenFileDialog1_FileOk);
-            // 
-            // buttonNext
-            // 
-            this.buttonNext.Location = new System.Drawing.Point(613, 468);
-            this.buttonNext.Name = "buttonNext";
-            this.buttonNext.Size = new System.Drawing.Size(128, 43);
-            this.buttonNext.TabIndex = 0;
-            this.buttonNext.Text = "Next";
-            this.buttonNext.UseVisualStyleBackColor = true;
-            this.buttonNext.Click += new System.EventHandler(this.ButtonNext_Click);
+            this.buttonSelectAnotherProduct.Location = new System.Drawing.Point(442, 396);
+            this.buttonSelectAnotherProduct.Name = "buttonSelectAnotherProduct";
+            this.buttonSelectAnotherProduct.Size = new System.Drawing.Size(310, 43);
+            this.buttonSelectAnotherProduct.TabIndex = 1;
+            this.buttonSelectAnotherProduct.Text = "Select another product";
+            this.buttonSelectAnotherProduct.UseVisualStyleBackColor = true;
+            this.buttonSelectAnotherProduct.Click += new System.EventHandler(this.ButtonSelectAnotherProduct_Click);
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(459, 468);
+            this.buttonCancel.Location = new System.Drawing.Point(442, 458);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(128, 43);
-            this.buttonCancel.TabIndex = 1;
+            this.buttonCancel.Size = new System.Drawing.Size(310, 43);
+            this.buttonCancel.TabIndex = 2;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
-            // FormSelect
+            // FormProductInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 544);
             this.Controls.Add(this.buttonCancel);
-            this.Controls.Add(this.buttonNext);
+            this.Controls.Add(this.buttonSelectAnotherProduct);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MaximizeBox = false;
-            this.Name = "FormSelect";
+            this.Name = "FormProductInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Select product";
+            this.Text = "Product Info";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button buttonNext;
+        private System.Windows.Forms.Button buttonSelectAnotherProduct;
         private System.Windows.Forms.Button buttonCancel;
     }
 }
