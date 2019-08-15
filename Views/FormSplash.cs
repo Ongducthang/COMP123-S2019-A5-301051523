@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+// ===============================
+// AUTHOR       : Duc-Thang ONG
+// CREATE DATE  : 31-Jul-2019
+// PURPOSE      : This is SplashForm working as a welcome page
+// ===============================
 
 namespace COMP123_S2019_A5_301051523.Views
 {
@@ -28,5 +33,6 @@ namespace COMP123_S2019_A5_301051523.Views
         {
             timerSplash.Enabled = true;
         }
+
     }
 }

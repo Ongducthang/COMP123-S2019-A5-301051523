@@ -7,7 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+// ===============================
+// AUTHOR       : Duc-Thang ONG
+// CREATE DATE  : 31-Jul-2019
+// PURPOSE      : This is StartForm showing options to go to other pages
+// ===============================
 namespace COMP123_S2019_A5_301051523.Views
 {
     public partial class FormStart : Form
