@@ -13,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using COMP123_S2019_A5_301051523.Models;
 using System.Windows.Forms;
 
 namespace COMP123_S2019_A5_301051523
@@ -25,12 +26,14 @@ namespace COMP123_S2019_A5_301051523
         public static FormStart formStart;
         public static FormAbout formAbout;
         public static FormSplash formSplash;
+        public static Product product;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
@@ -40,6 +43,7 @@ namespace COMP123_S2019_A5_301051523
             formStart = new FormStart();
             formAbout = new FormAbout();
             formSplash = new FormSplash();
+            product = new Product();
             Application.Run(formSplash);
         }
     }

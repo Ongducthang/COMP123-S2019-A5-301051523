@@ -67,6 +67,7 @@ namespace COMP123_S2019_A5_301051523
         private void DataGridViewProduct_SelectionChanged(object sender, EventArgs e)
         {
             LabelYourSelectionData.Text = dataGridViewProductSelectedItem();
+            dataGridViewProductSelectedAllItems();
         }
 
         public string dataGridViewProductSelectedItem()
@@ -78,6 +79,26 @@ namespace COMP123_S2019_A5_301051523
             var model = currentRow.Cells[3].Value.ToString();
             string outputString = $"{manufacturer} {model} ${cost:F2}";
             return outputString;
+        }
+        public void dataGridViewProductSelectedAllItems()
+        {
+            var rowIndex = dataGridViewProduct.CurrentCell.RowIndex;
+            var currentRow = dataGridViewProduct.Rows[rowIndex];
+            var product = Program.product;
+            product.productID = short.Parse(currentRow.Cells[0].Value.ToString());
+            product.cost = decimal.Parse(currentRow.Cells[1].Value.ToString());
+            product.condition = currentRow.Cells[14].Value.ToString();
+            product.manufacturer = currentRow.Cells[2].Value.ToString();
+            product.model = currentRow.Cells[3].Value.ToString();
+            product.RAM_size = currentRow.Cells[5].Value.ToString();
+            product.CPU_brand =  currentRow.Cells[10].Value.ToString();
+            product.CPU_type = currentRow.Cells[11].Value.ToString();
+            product.CPU_speed =  currentRow.Cells[12].Value.ToString();
+            product.CPU_number = currentRow.Cells[13].Value.ToString();
+            product.OS = currentRow.Cells[15].Value.ToString();
+            product.platform =  currentRow.Cells[16].Value.ToString();
+            product.HDD_size =  currentRow.Cells[17].Value.ToString();
+            product.GPU_Type =  currentRow.Cells[19].Value.ToString();
         }
     }
 }

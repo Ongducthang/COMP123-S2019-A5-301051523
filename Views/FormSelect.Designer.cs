@@ -34,8 +34,6 @@
             this.buttonNext = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.dataGridViewProduct = new System.Windows.Forms.DataGridView();
-            this.labelYourSelection = new System.Windows.Forms.Label();
-            this.LabelYourSelectionData = new System.Windows.Forms.TextBox();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +66,8 @@
             this.powerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.webcamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.labelYourSelection = new System.Windows.Forms.Label();
+            this.LabelYourSelectionData = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -99,6 +99,8 @@
             // 
             // dataGridViewProduct
             // 
+            this.dataGridViewProduct.AllowUserToAddRows = false;
+            this.dataGridViewProduct.AllowUserToDeleteRows = false;
             this.dataGridViewProduct.AllowUserToResizeColumns = false;
             this.dataGridViewProduct.AllowUserToResizeRows = false;
             this.dataGridViewProduct.AutoGenerateColumns = false;
@@ -147,23 +149,6 @@
             this.dataGridViewProduct.Size = new System.Drawing.Size(754, 397);
             this.dataGridViewProduct.TabIndex = 2;
             this.dataGridViewProduct.SelectionChanged += new System.EventHandler(this.DataGridViewProduct_SelectionChanged);
-            // 
-            // labelYourSelection
-            // 
-            this.labelYourSelection.AutoSize = true;
-            this.labelYourSelection.Location = new System.Drawing.Point(12, 445);
-            this.labelYourSelection.Name = "labelYourSelection";
-            this.labelYourSelection.Size = new System.Drawing.Size(173, 29);
-            this.labelYourSelection.TabIndex = 3;
-            this.labelYourSelection.Text = "Your selection:";
-            // 
-            // LabelYourSelectionData
-            // 
-            this.LabelYourSelectionData.Location = new System.Drawing.Point(191, 442);
-            this.LabelYourSelectionData.Name = "LabelYourSelectionData";
-            this.LabelYourSelectionData.ReadOnly = true;
-            this.LabelYourSelectionData.Size = new System.Drawing.Size(562, 35);
-            this.LabelYourSelectionData.TabIndex = 4;
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -447,6 +432,23 @@
             // productBindingSource
             // 
             this.productBindingSource.DataSource = typeof(COMP123_S2019_A5_301051523.Models.Product);
+            // 
+            // labelYourSelection
+            // 
+            this.labelYourSelection.AutoSize = true;
+            this.labelYourSelection.Location = new System.Drawing.Point(12, 445);
+            this.labelYourSelection.Name = "labelYourSelection";
+            this.labelYourSelection.Size = new System.Drawing.Size(173, 29);
+            this.labelYourSelection.TabIndex = 3;
+            this.labelYourSelection.Text = "Your selection:";
+            // 
+            // LabelYourSelectionData
+            // 
+            this.LabelYourSelectionData.Location = new System.Drawing.Point(191, 442);
+            this.LabelYourSelectionData.Name = "LabelYourSelectionData";
+            this.LabelYourSelectionData.ReadOnly = true;
+            this.LabelYourSelectionData.Size = new System.Drawing.Size(562, 35);
+            this.LabelYourSelectionData.TabIndex = 4;
             // 
             // FormSelect
             // 
