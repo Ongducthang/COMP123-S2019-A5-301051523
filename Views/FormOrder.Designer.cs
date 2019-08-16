@@ -68,6 +68,8 @@
             this.ButtonCancel = new System.Windows.Forms.Button();
             this.ButtonFinish = new System.Windows.Forms.Button();
             this.PictureBoxOrderProduct = new System.Windows.Forms.PictureBox();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.menuStripFormOrder.SuspendLayout();
             this.GroupBoxSystemComponents.SuspendLayout();
             this.GroupBoxYourPrice.SuspendLayout();
@@ -254,24 +256,24 @@
             // 
             // LabelOtherInfoData
             // 
-            this.LabelOtherInfoData.Location = new System.Drawing.Point(145, 171);
+            this.LabelOtherInfoData.Location = new System.Drawing.Point(104, 171);
             this.LabelOtherInfoData.Multiline = true;
             this.LabelOtherInfoData.Name = "LabelOtherInfoData";
             this.LabelOtherInfoData.ReadOnly = true;
-            this.LabelOtherInfoData.Size = new System.Drawing.Size(279, 272);
+            this.LabelOtherInfoData.Size = new System.Drawing.Size(320, 272);
             this.LabelOtherInfoData.TabIndex = 10;
             // 
             // LabelModelData
             // 
-            this.LabelModelData.Location = new System.Drawing.Point(324, 97);
+            this.LabelModelData.Location = new System.Drawing.Point(258, 97);
             this.LabelModelData.Name = "LabelModelData";
             this.LabelModelData.ReadOnly = true;
-            this.LabelModelData.Size = new System.Drawing.Size(100, 35);
+            this.LabelModelData.Size = new System.Drawing.Size(166, 35);
             this.LabelModelData.TabIndex = 10;
             // 
             // LabelPlatformData
             // 
-            this.LabelPlatformData.Location = new System.Drawing.Point(324, 45);
+            this.LabelPlatformData.Location = new System.Drawing.Point(296, 45);
             this.LabelPlatformData.Name = "LabelPlatformData";
             this.LabelPlatformData.ReadOnly = true;
             this.LabelPlatformData.Size = new System.Drawing.Size(100, 35);
@@ -279,16 +281,16 @@
             // 
             // LabelBrandData
             // 
-            this.LabelBrandData.Location = new System.Drawing.Point(112, 97);
+            this.LabelBrandData.Location = new System.Drawing.Point(60, 97);
             this.LabelBrandData.Name = "LabelBrandData";
             this.LabelBrandData.ReadOnly = true;
-            this.LabelBrandData.Size = new System.Drawing.Size(100, 35);
+            this.LabelBrandData.Size = new System.Drawing.Size(112, 35);
             this.LabelBrandData.TabIndex = 10;
             // 
             // LabelModel
             // 
             this.LabelModel.AutoSize = true;
-            this.LabelModel.Location = new System.Drawing.Point(218, 100);
+            this.LabelModel.Location = new System.Drawing.Point(206, 100);
             this.LabelModel.Name = "LabelModel";
             this.LabelModel.Size = new System.Drawing.Size(81, 29);
             this.LabelModel.TabIndex = 9;
@@ -297,10 +299,10 @@
             // 
             // LabelConditionData
             // 
-            this.LabelConditionData.Location = new System.Drawing.Point(112, 45);
+            this.LabelConditionData.Location = new System.Drawing.Point(84, 42);
             this.LabelConditionData.Name = "LabelConditionData";
             this.LabelConditionData.ReadOnly = true;
-            this.LabelConditionData.Size = new System.Drawing.Size(100, 35);
+            this.LabelConditionData.Size = new System.Drawing.Size(120, 35);
             this.LabelConditionData.TabIndex = 10;
             // 
             // LabelBrand
@@ -316,7 +318,7 @@
             // LabelPlatform
             // 
             this.LabelPlatform.AutoSize = true;
-            this.LabelPlatform.Location = new System.Drawing.Point(218, 48);
+            this.LabelPlatform.Location = new System.Drawing.Point(227, 48);
             this.LabelPlatform.Name = "LabelPlatform";
             this.LabelPlatform.Size = new System.Drawing.Size(102, 29);
             this.LabelPlatform.TabIndex = 9;
@@ -341,6 +343,7 @@
             this.GroupBoxYourPrice.Controls.Add(this.LabelTotal);
             this.GroupBoxYourPrice.Controls.Add(this.LabelTaxData);
             this.GroupBoxYourPrice.Controls.Add(this.LabelTax);
+            this.GroupBoxYourPrice.Controls.Add(this.shapeContainer1);
             this.GroupBoxYourPrice.Location = new System.Drawing.Point(484, 233);
             this.GroupBoxYourPrice.Name = "GroupBoxYourPrice";
             this.GroupBoxYourPrice.Size = new System.Drawing.Size(282, 179);
@@ -414,7 +417,7 @@
             // 
             // ButtonCancel
             // 
-            this.ButtonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonCancel.Location = new System.Drawing.Point(593, 430);
             this.ButtonCancel.Name = "ButtonCancel";
             this.ButtonCancel.Size = new System.Drawing.Size(75, 63);
@@ -425,7 +428,7 @@
             // 
             // ButtonFinish
             // 
-            this.ButtonFinish.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonFinish.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonFinish.Location = new System.Drawing.Point(691, 430);
             this.ButtonFinish.Name = "ButtonFinish";
             this.ButtonFinish.Size = new System.Drawing.Size(75, 63);
@@ -443,6 +446,25 @@
             this.PictureBoxOrderProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxOrderProduct.TabIndex = 6;
             this.PictureBoxOrderProduct.TabStop = false;
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(3, 31);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(276, 145);
+            this.shapeContainer1.TabIndex = 11;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 0;
+            this.lineShape1.X2 = 276;
+            this.lineShape1.Y1 = 90;
+            this.lineShape1.Y2 = 90;
             // 
             // FormOrder
             // 
@@ -519,6 +541,8 @@
         private System.Windows.Forms.Button ButtonFinish;
         private System.Windows.Forms.Button ButtonCancel;
         private System.Windows.Forms.Button ButtonBack;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
     }
 }
 

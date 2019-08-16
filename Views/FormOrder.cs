@@ -63,14 +63,14 @@ namespace COMP123_S2019_A5_301051523
         {
             var product = Program.product;
             LabelPriceData.Text = $"{product.cost}";
-            LabelTaxData.Text = $"{(product.cost)*(13/100):C}";
+            LabelTaxData.Text = $"{(product.cost)*(decimal).13}";
             LabelTotalData.Text = $"{product.cost*(decimal)1.13}";
 
             LabelPlatformData.Text = product.platform;
             LabelBrandData.Text = product.manufacturer;
             LabelConditionData.Text = product.condition;
             LabelModelData.Text = product.model;
-            LabelOtherInfoData.Text = $"{product.RAM_size}\r{product.HDD_size}\n{product.CPU_brand}\n{product.CPU_number}\n{product.CPU_type}\n{product.CPU_speed}\n{product.GPU_Type}";
+            LabelOtherInfoData.Text = product.RAM_size + "\n\n" + product.HDD_size + "\r\r" +  product.CPU_brand + "\r\r" + product.CPU_number + "\r\r" + product.CPU_type + "\r\r" + product.CPU_speed + "\r\r" +  product.GPU_Type;
         }
 
         /// <summary>
