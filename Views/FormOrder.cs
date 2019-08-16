@@ -94,5 +94,6 @@ namespace COMP123_S2019_A5_301051523
             this.Hide();
             Program.formProductInfo.Show();
         }
+        //
     }
 }
