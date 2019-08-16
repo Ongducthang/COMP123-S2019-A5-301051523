@@ -36,6 +36,7 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectAnotherProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,7 +71,6 @@
             this.LabelConditionData = new System.Windows.Forms.TextBox();
             this.LabelProductIDData = new System.Windows.Forms.TextBox();
             this.SaveFileDialogProductInfo = new System.Windows.Forms.SaveFileDialog();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.OpenFileDialogProductInfo = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.GroupBoxProductInfo.SuspendLayout();
@@ -144,11 +144,17 @@
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(267, 6);
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -163,6 +169,7 @@
             this.selectAnotherProductToolStripMenuItem.Name = "selectAnotherProductToolStripMenuItem";
             this.selectAnotherProductToolStripMenuItem.Size = new System.Drawing.Size(294, 34);
             this.selectAnotherProductToolStripMenuItem.Text = "Select another product";
+            this.selectAnotherProductToolStripMenuItem.Click += new System.EventHandler(this.ButtonSelectAnotherProduct_Click);
             // 
             // GroupBoxProductInfo
             // 
@@ -444,11 +451,6 @@
             this.LabelProductIDData.ReadOnly = true;
             this.LabelProductIDData.Size = new System.Drawing.Size(166, 35);
             this.LabelProductIDData.TabIndex = 8;
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(267, 6);
             // 
             // OpenFileDialogProductInfo
             // 

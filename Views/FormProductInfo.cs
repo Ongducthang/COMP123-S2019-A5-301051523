@@ -23,34 +23,8 @@ namespace COMP123_S2019_A5_301051523.Views
             InitializeComponent();
         }
 
-        private void ButtonSelectAnotherProduct_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Program.formSelect.Show();
-        }
-
-
-        /// <summary>
-        /// This is the event handler when ButtonCancel clicked
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonCancel_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-        /// <summary>
-        /// this is the event handler when ButtonNext clicked
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonNext_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Program.formOrder.Show();
-        }
-
-        private void FormProductInfo_Activated(object sender, EventArgs e)
+        //Event handler to load data from selected computer in previous form
+         private void FormProductInfo_Activated(object sender, EventArgs e)
         {
             var product = Program.product;
             LabelProductIDData.Text = product.productID.ToString();
@@ -70,6 +44,12 @@ namespace COMP123_S2019_A5_301051523.Views
             LabelCPUSpeedData.Text = product.CPU_speed;
             LabelGPUTypeData.Text = product.GPU_Type;
         }
+
+        /// <summary>
+        /// Event handler for OpenToolStripMenuItem_Click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OpenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //configure the file dialog
@@ -107,7 +87,7 @@ namespace COMP123_S2019_A5_301051523.Views
                         //Clean up
                         inputStream.Close();
                         inputStream.Dispose();
-                        ButtonNext_Click(sender ,e);
+                        //ButtonNext_Click(sender ,e);
                     }
 
                     catch (IOException exception)
@@ -120,8 +100,11 @@ namespace COMP123_S2019_A5_301051523.Views
 
         }
 
-
-    
+        /// <summary>
+        /// Event handler for SaveToolStripMenuItem_Click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //configure the file dialog
@@ -162,6 +145,38 @@ namespace COMP123_S2019_A5_301051523.Views
             }
 
             
+        }
+
+        /// <summary>
+        /// This is the event handler when ButtonCancel clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonCancel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        /// <summary>
+        /// this is the event handler when ButtonNext clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonNext_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.formOrder.Show();
+        }
+
+        /// <summary>
+        /// This is event handler for Next Button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonSelectAnotherProduct_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.formSelect.Show();
         }
     }
 }

@@ -30,7 +30,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
-            this.labelProductName = new System.Windows.Forms.Label();
+            this.LabelProduct = new System.Windows.Forms.Label();
             this.labelVersion = new System.Windows.Forms.Label();
             this.labelCopyright = new System.Windows.Forms.Label();
             this.labelCompanyName = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
             this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67F));
             this.tableLayoutPanel.Controls.Add(this.logoPictureBox, 0, 0);
-            this.tableLayoutPanel.Controls.Add(this.labelProductName, 1, 0);
+            this.tableLayoutPanel.Controls.Add(this.LabelProduct, 1, 0);
             this.tableLayoutPanel.Controls.Add(this.labelVersion, 1, 1);
             this.tableLayoutPanel.Controls.Add(this.labelCopyright, 1, 2);
             this.tableLayoutPanel.Controls.Add(this.labelCompanyName, 1, 3);
@@ -69,7 +69,7 @@
             // logoPictureBox
             // 
             this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.logoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoPictureBox.Image")));
+            this.logoPictureBox.Image = global::COMP123_S2019_A5_301051523.Properties.Resources.logo2;
             this.logoPictureBox.Location = new System.Drawing.Point(4, 5);
             this.logoPictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.logoPictureBox.Name = "logoPictureBox";
@@ -79,17 +79,17 @@
             this.logoPictureBox.TabIndex = 12;
             this.logoPictureBox.TabStop = false;
             // 
-            // labelProductName
+            // LabelProduct
             // 
-            this.labelProductName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelProductName.Location = new System.Drawing.Point(214, 0);
-            this.labelProductName.Margin = new System.Windows.Forms.Padding(9, 0, 4, 0);
-            this.labelProductName.MaximumSize = new System.Drawing.Size(0, 26);
-            this.labelProductName.Name = "labelProductName";
-            this.labelProductName.Size = new System.Drawing.Size(406, 26);
-            this.labelProductName.TabIndex = 19;
-            this.labelProductName.Text = "Product Name";
-            this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LabelProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelProduct.Location = new System.Drawing.Point(214, 0);
+            this.LabelProduct.Margin = new System.Windows.Forms.Padding(9, 0, 4, 0);
+            this.LabelProduct.MaximumSize = new System.Drawing.Size(0, 26);
+            this.LabelProduct.Name = "LabelProduct";
+            this.LabelProduct.Size = new System.Drawing.Size(406, 26);
+            this.LabelProduct.TabIndex = 19;
+            this.LabelProduct.Text = "Computer Shopping App";
+            this.LabelProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelVersion
             // 
@@ -100,7 +100,7 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(406, 26);
             this.labelVersion.TabIndex = 0;
-            this.labelVersion.Text = "Version";
+            this.labelVersion.Text = "Version 123.0";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCopyright
@@ -124,7 +124,7 @@
             this.labelCompanyName.Name = "labelCompanyName";
             this.labelCompanyName.Size = new System.Drawing.Size(406, 26);
             this.labelCompanyName.TabIndex = 22;
-            this.labelCompanyName.Text = "Company Name";
+            this.labelCompanyName.Text = "Dollar Mr Robot Computers Inc.";
             this.labelCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textBoxAbout
@@ -139,7 +139,7 @@
             this.textBoxAbout.Size = new System.Drawing.Size(406, 193);
             this.textBoxAbout.TabIndex = 23;
             this.textBoxAbout.TabStop = false;
-            this.textBoxAbout.Text = "About";
+            this.textBoxAbout.Text = "This is application to shop computers.";
             // 
             // okButton
             // 
@@ -181,7 +181,7 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
         private System.Windows.Forms.PictureBox logoPictureBox;
-        private System.Windows.Forms.Label labelProductName;
+        private System.Windows.Forms.Label LabelProduct;
         private System.Windows.Forms.Label labelVersion;
         private System.Windows.Forms.Label labelCopyright;
         private System.Windows.Forms.Label labelCompanyName;

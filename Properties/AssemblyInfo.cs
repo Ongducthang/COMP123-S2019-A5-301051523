@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("COMP123-S2019-A5-301051523")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("This application demonstrates selecting, showing, saving and opening computer's data.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("COMP123-S2019-A5-301051523")]
+[assembly: AssemblyCompany("Dollar Mr Robot Computers Inc")]
+[assembly: AssemblyProduct("Computer shopping app")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("COMP123")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.2.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

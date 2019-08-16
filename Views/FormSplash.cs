@@ -29,6 +29,11 @@ namespace COMP123_S2019_A5_301051523.Views
             this.Hide();
         }
 
+        /// <summary>
+        /// This is the load event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormSplash_Load(object sender, EventArgs e)
         {
             timerSplash.Enabled = true;

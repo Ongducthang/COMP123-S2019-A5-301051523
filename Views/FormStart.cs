@@ -21,18 +21,33 @@ namespace COMP123_S2019_A5_301051523.Views
             InitializeComponent();
         }
 
+        /// <summary>
+        /// This is event handler when ButtonToFormSelect clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonToFormSelect_Click(object sender, EventArgs e)
         {
             this.Hide();
             Program.formSelect.Show();
         }
 
+        /// <summary>
+        /// This is event handler when Button Product Info clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProductInfo_Click(object sender, EventArgs e)
         {
             this.Hide();
             Program.formProductInfo.Show();
         }
 
+        /// <summary>
+        /// This is event handler when Button Quit clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonQuit_Click(object sender, EventArgs e)
         {
             Application.Exit();
