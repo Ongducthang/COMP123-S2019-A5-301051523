@@ -87,7 +87,7 @@ namespace COMP123_S2019_A5_301051523.Views
                         //Clean up
                         inputStream.Close();
                         inputStream.Dispose();
-                        //ButtonNext_Click(sender ,e);
+                        ButtonNext_Click(sender ,e);
                     }
 
                     catch (IOException exception)
